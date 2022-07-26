@@ -1,4 +1,5 @@
 var location_id = [
+
     '3000035821',
     // '3000022148',
     // '3000016152',
@@ -28,6 +29,7 @@ const options = {
         'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
     }
 };
+
 fetch('https://covid-193.p.rapidapi.com/statistics', settings)
     .then(response => response.json())
     .then(response => {
@@ -46,6 +48,7 @@ fetch('https://covid-193.p.rapidapi.com/statistics', settings)
                         ({
                             country
                         }) => country === priceline.cityInfo.countryName));
+
 
 
                 })
