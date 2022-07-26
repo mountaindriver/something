@@ -33,17 +33,13 @@ fetch('https://priceline-com-provider.p.rapidapi.com/v1/hotels/search?sort_order
             .then(response => {
                     console.log(response)
                     console.log(priceline)
+
                     console.log(response.response.find(
                         ({
                             country
                         }) => country === priceline.cityInfo.countryName));
-                    
-                }
 
-            )
-
-
-            .catch(err => console.error(err));
+           .catch(err => console.error(err));
     })
     .catch(err => console.error(err));
 }
