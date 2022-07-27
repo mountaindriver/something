@@ -1,13 +1,11 @@
 var location_id = [
-    // '3000035823', //Rome, Italy
-    // '3000035821', //Berlin, Germany
+    '3000035823', //Rome, Italy
+    '3000035827', //Paris, France
+    '3000035821', //Berlin, Germany
     // '3000035952', //Stockholm, Sweden
-    '3000035827' //Paris, France
 ]
 
-// slc nyc buffalo austin rome stockholm
-
-var con = $(".contianer")
+var jscard = $('#jscard');
 
 const covid = {
     method: 'GET',
@@ -27,23 +25,44 @@ const pricelineAPI = {
 
 for (var i = 0; i < location_id.length; i++) {
 
-fetch('https://priceline-com-provider.p.rapidapi.com/v1/hotels/search?sort_order=HDR&location_id='+location_id[i]+'&date_checkout=2022-11-16&date_checkin=2022-11-15&star_rating_ids=3.0%2C3.5%2C4.0%2C4.5%2C5.0&rooms_number=1&amenities_ids=FINTRNT%2CFBRKFST', pricelineAPI)
-    .then(response => response.json())
-    .then(priceline => {
-        fetch('https://covid-193.p.rapidapi.com/statistics', covid)
-            .then(response => response.json())
-            .then(data => {
-                // console.log(data)
-                console.log(priceline)
+    fetch('https://priceline-com-provider.p.rapidapi.com/v1/hotels/search?sort_order=HDR&location_id=' + location_id[i] + '&date_checkout=2022-11-16&date_checkin=2022-11-15&star_rating_ids=3.0%2C3.5%2C4.0%2C4.5%2C5.0&rooms_number=1&amenities_ids=FINTRNT%2CFBRKFST', pricelineAPI)
+        .then(response => response.json())
+        .then(priceline => {
+            fetch('https://covid-193.p.rapidapi.com/statistics', covid)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    console.log(priceline)
 
-                var test = data.response.find(({ country }) => country === priceline.cityInfo.countryName);
+                    var countryEl = data.response.find(({
+                        country
+                    }) => country === priceline.cityInfo.countryName);
 
-                console.log(test.deaths.new);
-                console.log(priceline.hotels[1].ratesSummary.minPrice);
-                console.log(priceline.hotels[1].name);
-                console.log(priceline.hotels[1].overallGuestRating);
-            })
-           .catch(err => console.error(err));
-    })
-    .catch(err => console.error(err));
+                    console.log(countryEl.deaths.new);
+                    console.log(priceline.hotels[1].ratesSummary.minPrice);
+                    console.log(priceline.hotels[1].name);
+                    console.log(priceline.hotels[1].overallGuestRating);
+
+                    var price = priceline.hotels[1].ratesSummary.minPrice;
+
+                    var deathCount = countryEl.deaths.new;
+
+                    var card = 
+                    $(`
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-success">
+                            <div class="content">
+                                <p class="title">${priceline.cityInfo.countryName}</p>
+                                <p class="subtitle">Starting Hotel rates per Night: ${price} </p>
+                                <p class="subtitle">Covid Death: ${deathCount}</p>
+                            </div>
+                        </article>
+                    </div>`)
+                    jscard.append(card);
+                    
+
+                })
+                .catch(err => console.error(err));
+        })
+        .catch(err => console.error(err));
 }
