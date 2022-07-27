@@ -178,6 +178,8 @@ Use the `BLANK_README.md` to get started.
 ## Contact
 
 Lucas Freigenberg - lsfreigenberg@outlook.com
+James Hampton - jimmy.hampton@outlook.com
+
 
 Project Link: []()
 
