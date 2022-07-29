@@ -18,7 +18,7 @@ const covid = {
 const pricelineAPI = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': '625324e95fmshe61bc7d687315bfp1b7c44jsn389593968b9d',
+        'X-RapidAPI-Key': '4e7b3c0123msh0144d25301a5901p1a8438jsn56901a713f95',
         'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
     }
 };
