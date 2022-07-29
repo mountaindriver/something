@@ -49,36 +49,33 @@
       <button class="button">Start a free trial</button>
     </div>
 
-    <div class="show-for-large large-3 columns">
-      <img src="https://placehold.it/400x370&text=PSR1257 + 12 C" alt="picture of space">
-    </div>
 
     <div class="medium-5 large-3 columns">
       <div class="callout secondary">
         <form>
           <div class="row">
             <div class="small-12 columns">
-
-              <label>Origin:
-                <input type="text" id="origin" placeholder="Where to?">
+              <label>Destination
+                <input type="text" id="destination" placeholder="Where from?">
               </label>
             </div>
             <div class="small-12 columns">
-              <label>Destination
-                <input type="text" id="destination" placeholder="Where from?">
+              <label>Origin:
+                <input type="text" id="origin" placeholder="Where to?">
               </label>
             </div>
             <div class="small-12 columns">
               <label>Check In:
                 <input type="text" id="checkIn" placeholder="">
               </label>
-              <div class="small-12 columns">
-                <label>Check Out:
-                  <input type="text" id="checkOut" placeholder="">
-                </label>
-              </div>
-              <button type="submit" class="button">Search Now!</button>
             </div>
+            <div class="small-12 columns">
+              <label>Check Out:
+                <input type="text" id="checkOut" placeholder="">
+              </label>
+            </div>
+            <button type="submit" class="button">Search Now!</button>
+          </div>
         </form>
       </div>
     </div>
@@ -94,14 +91,10 @@
   </div>
 
   <!-- Card Load here -->
-  <div id="jscard">
-  </div>
+  <div id="jscard"></div>
 
-  <div class="row column">
-    <a class="button hollow expanded">Load More</a>
-  </div>
 
-  <div class="row column">
+  <div class="row">
     <a class="button hollow expanded">Load More</a>
   </div>
   <!-- Footer -->
@@ -119,7 +112,7 @@
       </div>
 
       <div class="small-6 large-3 columns">
-        <p class="lead">Partner With Covid traveling</p>
+        <p class="lead">Partner With Covid Traveling</p>
         <ul class="menu vertical">
           <li><a href="#">Add Your Hotel</a></li>
           <li><a href="#">Partner Solutions</a></li>
@@ -161,9 +154,6 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <script src="./assets/js/script.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
 </body>
 
 </html>

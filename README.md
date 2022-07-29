@@ -25,9 +25,10 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    </li>  
+    </li>
+    <li><a href= "Actually about our project">The real about section!</a></li> 
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>        
   </ol>
 </details>
 
@@ -159,6 +160,18 @@ Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+# Actually about our project
+
+Through blood, sweat and mostly tears. THIS is our project that we have so painstakingly created. A (mostly) functional website to give users general price & Covid information about locations they may want to travel to.
+* Heres what it does
+  * When opening the website the user will be greeted with our magnificent front end hand crafted by founda.... I mean us! This will include pictures and short descriptions of some popular locations
+  * Options, we here at groupName strongly belive that the end-user should be able to self-actualize their own traveling parameters to their very hearts extent. They will be able to determine a large array of factors they would like such as 
+    * Determine which Covid rates & local guidelines they would like 
+    * When they will be arriving to and departing from the location of their choice
+    * Their choice of Available hotels, rooms, rental cars, flights, donuts
+    * As well as determine which ratings are acceptable for for all of the above!
+  * 
+
 
 
 ### Built With
@@ -167,9 +180,9 @@ Use the `BLANK_README.md` to get started.
 * [HTML]
 * [CSS]
 * [JavaScript]
-* [Bulma]
+* [Foundation]
 * [Github]
-* []
+* [Lots of help from people who know what they're doing]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -177,9 +190,9 @@ Use the `BLANK_README.md` to get started.
 <!-- CONTACT -->
 ## Contact
 
-Lucas Freigenberg - lsfreigenberg@outlook.com
-James Hampton - jimmy.hampton@outlook.com
-
+* Lucas Freigenberg - lsfreigenberg@outlook.com
+* James Hampton ----- jimmy.hampton@outlook.com
+* Zachry Jorgensen -- z.d.jorgensen@gmail.com 
 
 Project Link: []()
 
@@ -189,10 +202,10 @@ Project Link: []()
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-These resources helped me greatly and gave me different perspectives on how to complete the project.
+These resources helped us greatly and gave us different perspectives on how to complete the project.
 
 * [MDN](https://developer.mozilla.org/en-US/)
-* []()
+* [Foundation docs](https://get.foundation/sites/docs/)
 * []()
 
 
