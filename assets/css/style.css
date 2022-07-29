@@ -1,0 +1,15 @@
+
+
+body {
+    background: grey;
+}
+
+
+#searchBtn {
+    background-color: blue;
+    color: whitesmoke;
+    padding: 10px 50px;
+    font-size: larger;
+    border: 0;
+    border-radius: 15px;
+}

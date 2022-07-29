@@ -10,67 +10,101 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <section class="hero is-primary">
     <div class="hero-body">
       <p class="title">
-        Primary hero
+        Covid Traveling Guide
       </p>
       <p class="subtitle">
-        Primary subtitle
+        Search for a travel destination and find currnet Room rates, cheap flight prices, and covid data all in one
+        location!
       </p>
     </div>
   </section>
 
   <div class="tile is-ancestor">
-    <div class="tile is-vertical is-6">
-      <div class="tile">
-        <div class="tile is-parent is-vertical">
-          <article class="tile is-child notification is-success">
-            <p class="title">Search</p>
-            <input class="input" type="text" placeholder="Search">
-            <span class="icon is-left">
-              <i class="fas fa-search" aria-hidden="true"></i>
+
+    <div class="tile is-parent is-6">
+      <div class="box">
+        <div class="feild">
+          <div class="control">
+            <p class="title">
+              Covid Traveling Guide
+            </p>
+            <p class="subtitle">
+              Search for a travel destination and find currnet Room rates, cheap flight prices, and covid data all in
+              one
+              location!
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div id="jscard ">
 
+    <div class="tile is-parent is-6">
+      <form class="box">
+        <div class="feild">
+          <div class="control">
+            <button type="radio" id="hotel"></button>
+            <label for="hotel">Hotel</label>
+            <button type="radio" id="flight"></button>
+            <label for="flight">Flight</label>
+            <button type="radio" id="covid"></button>
+            <label for="covid" Covide>Covid</label>
+          </div>
+        </div>
+
+        <div class="feild">
+          <div class="control">
+            <label for="checkIn">Check In:</label>
+            <input class="input" id="checkIn" type="text" placeholder="">
+          </div>
+        </div>
+
+        <div class="feild">
+          <div class="control">
+            <label for="checkIn">Check In:</label>
+            <input class="input" id="checkIn" type="text" placeholder="">
+          </div>
+        </div>
+
+        <div class="feild">
+          <label for whereFrom>Origin:</label>
+          <div class="control">
+            <input type="text" class="input" placeholder="Where from?">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="whereTo">Destination:</label>
+          <div class="control">
+            <input class="input" id="checkOut" type="text" placeholder="Where to?">
+          </div>
+        </div>
+
+        <button id="" class="is-primary">Search</button>
+      </form>
+
+      <div class='is-parent' id="jscard "></div>
     </div>
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
