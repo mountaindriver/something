@@ -1,159 +1,173 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="" lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Covid Traveling Guide</title>
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Edu+VIC+WA+NT+Beginner&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body class="body">
 
   <!-- Navigation -->
-  <div class="title-bar" data-responsive-toggle="travelMenu" data-hide-for="small">
-    <button class="menu-icon" type="button" data-toggle></button>
-    <div class="title-bar-title">Menu</div>
+  <div class="nav-bar-custom">
+    <ul class="menu dropdown" data-dropdown-menu>
+      <li>
+        <a href="#">Travel</a>
+        <ul class="menu">
+          <li><a href="#">Hotel</a></li>
+          <li><a href="#">Flights</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Covid</a>
+        <ul class="menu">
+          <li><a href="#">High Rates</a></li>
+          <li><a href="#">Moderate Rates</a></li>
+          <li><a href="#">Low Rates</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Featured</a>
+        <ul class="menu">
+          <li><a href="#">Feauted</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">United States</a></li>
+          <li><a href="#">Abroad</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">History</a>
+        <ul class="menu">
+          <li><a href="#">Recent</a></li>
+          <li><a href="#">Last Week</a></li>
+          <li><a href="#">All Time</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
-
-  <div class="top-bar" id="travelMenu">
-    <div class="top-bar-left">
-      <ul class="menu" data-responsive-menu="accordion">
-        <li class="menu-text">Covid Traveling</li>
-
-        <li><a href="#">Hotel</a></li>
-        <li><a href="#">Flights</a></li>
-        <li><a href="#">Covid</a></li>
-
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><a href="#">My Account</a></li>
-        <li><a class="button">Login</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- /Navigation -->
+  <!-- Navigation -->
 
   <br>
 
+  <!-- Jumbotron -->
   <div class="row">
 
-    <div class="medium-7 large-6 columns">
-      <h1>Travel without transmission!</h1>
-      <p class="subheader">It goes without saying that Covid isn't cool! Heres some cool places you can visit to help
-        get rid of the doom & gloom of quarantine!</p>
-      <button class="button">Take a Tour</button>
-      <button class="button">Start a free trial</button>
+    <div id="jumbotron" class="medium-6 large-5 columns">
+      <h1>Covid Safe Traveling</h1>
+      <h4>Travel Without Transmission!</h4>
+      <p>It goes without saying that Covid isn't cool! Heres some cool places you can visit to help
+        reduce the doom & gloom of quarantine!</p>
     </div>
+    <!-- Jumbotron -->
 
+    <!-- Form -->
+    <div class="medium-6 large-5 columns">
 
-    <div class="medium-5 large-3 columns">
-      <div class="callout secondary">
-        <form>
-          <div class="row">
-            <div class="small-12 columns">
-              <label>Destination
-                <input type="text" id="destination" placeholder="Where from?">
-              </label>
-            </div>
-            <div class="small-12 columns">
-              <label>Origin:
-                <input type="text" id="origin" placeholder="Where to?">
-              </label>
-            </div>
-            <div class="small-12 columns">
-              <label>Check In:
-                <input type="text" id="checkIn" placeholder="">
-              </label>
-            </div>
-            <div class="small-12 columns">
-              <label>Check Out:
-                <input type="text" id="checkOut" placeholder="">
-              </label>
-            </div>
-            <button type="submit" class="button">Search Now!</button>
+      <!-- callout secondary -->
+      <form>
+        <div class="row card-custom">
+          <div class="small-12 columns">
+            <label>Destination
+              <input type="text" id="destination" placeholder="Where from?">
+            </label>
           </div>
-        </form>
-      </div>
+          <div class="small-12 columns">
+            <label>Origin:
+              <input type="text" id="origin" placeholder="Where to?">
+            </label>
+          </div>
+          <div class="small-12 columns">
+            <label>Check In:
+              <input type="text" id="checkIn" placeholder="">
+            </label>
+          </div>
+          <div class="small-12 columns">
+            <label>Check Out:
+              <input type="text" id="checkOut" placeholder="">
+            </label>
+          </div>
+          <button type="submit" class="button expanded button-custom">Search</button>
+        </div>
+      </form>
+    </div>
+    <!-- Form -->
+
+    <div class="row column">
+      <hr>
     </div>
 
-  </div>
+    <div class="row column">
+      <p class="lead">Trending Covid Destinations</p>
+    </div>
 
-  <div class="row column">
-    <hr>
-  </div>
-
-  <div class="row column">
-    <p class="lead">Trending Covid Destinations</p>
-  </div>
-
-  <!-- Card Load here -->
-  <div id="jscard"></div>
+    <!-- Card Load here -->
+    <div id="jscard"></div>
 
 
-  <div class="row">
-    <a class="button hollow expanded">Load More</a>
-  </div>
+    <div class="row">
+      <a class="button hollow expanded">Load More</a>
+    </div>
+
   <!-- Footer -->
   <footer>
-    <div class="row expanded callout secondary">
+    <div class="row expanded callout large">
 
-      <div class="small-6 large-3 columns">
-        <p class="lead">Our Products</p>
+      <div class="small-12 medium-3 large-3 columns" id="custom-footer">
+        <p class="lead"> Our Products </p>
         <ul class="menu vertical">
-          <li><a href="#">Covd Deals</a></li>
-          <li><a href="#">Hotels</a></li>
-          <li><a href="#">Flights</a></li>
-          <li><a href="#">Covid Visa Card</a></li>
+          <li><a href="#"> Covid Deals </a></li>
+          <li><a href="#"> Hotels </a></li>
+          <li><a href="#"> Flights </a></li>
         </ul>
       </div>
 
-      <div class="small-6 large-3 columns">
+      <div class="small-12 medium-3 large-3 columns" id="custom-footer">
         <p class="lead">Partner With Covid Traveling</p>
         <ul class="menu vertical">
-          <li><a href="#">Add Your Hotel</a></li>
-          <li><a href="#">Partner Solutions</a></li>
-          <li><a href="#">Advertise</a></li>
+          <li><a href="#"> Add Your Hotel </a></li>
+          <li><a href="#"> Partner Solutions </a></li>
+          <li><a href="#"> Advertise </a></li>
         </ul>
       </div>
 
-      <div class="small-6 large-3 columns">
+      <div class="small-12 medium-3 large-3 columns" id="custom-footer">
         <p class="lead">Contact</p>
         <ul class="menu vertical">
           <li>
-            <a href="#"><i class="fi-social-twitter"></i> Github</a>
+            <a href="https://github.com/mountaindriver/super-team-project"><i class="fi-social-github"></i> Github </a>
           </li>
           <li>
-            <a href="#"><i class="fi-social-facebook"></i> Facebook</a>
+            <a href="#"><i class="fi-social-twitter"></i> Twitter </a>
           </li>
           <li>
-            <a href="#"><i class="fi-social-instagram"></i> Instagram</a>
-          </li>
-          <li>
-            <a href="#"><i class="fi-social-pinterest"></i> Pinterest</a>
+            <a href="#"><i class="fi-social-instagram"></i> Instagram </a>
           </li>
         </ul>
       </div>
 
-      <div class="small-6 large-3 columns">
+      <div class="small-12 medium-3 large-3 columns" id="custom-footer">
         <p class="lead">About Covid Traveling</p>
         <ul class="menu vertical">
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#"> Our Story </a></li>
+          <li><a href="#"> Careers </a></li>
+          <li><a href="#"> Terms and Conditions </a></li>
         </ul>
       </div>
 
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
