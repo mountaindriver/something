@@ -1,6 +1,101 @@
+:root{
+    --clr-main-900: #4d06b0;
+    --clr-main-700: #6A55F2;
+    --clr-main-500: #5869DB;
+    --clr-main-300: #5593F2;
+    --clr-main-100: #dff3fd;
+    --clr-neau-900: black;
+    --clr-neau-700: rgb(61, 61, 61);
+    --clr-neau-200: rgb(168, 166, 169);
+    --clr-neau-100: white;
+}
+
 .body {
-    background-color: rgb(65, 57, 113);
+    background-color: var(--clr-main-100);
+    color: var(--clr-neau-700);
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar-custom {
+    background-color:  var(--clr-main-300);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar-custom li a{
+    background-color: var(--clr-main-300);
+    color: var(--clr-neau-100);
+
+}
+
+#jumbotron h1{
+    font-size: xx-large;
+    
+}
+
+#jumbotron h4{
+    font-style: italic;
+}
+
+#jumbotron p{
+    color: var(--clr-neau-900);
+    font-weight: bold;
+}
+
+.card-custom{
+    color:var(--clr-neau-100);
+    background-color: #4d06b0;
+    padding: 20px;
+    border-radius: 16px;
+    max-width: 350px;
+    margin-left: 5px;
+
+}
+
+.card-custom label{
     color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.button-custom {
+    border-radius: 8px;
+    max-width: 280px;
+}
+
+.pricing-table{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(243,246, 243, 0.523);
+    border-radius: 16px;
+    margin: 8px;
+}
+
+.price {
+    background-color: rgba(105, 105, 105, 0.997);
+    font-size: large;
+    color: var(--clr-neau-100);
+}
+
+.title{
+    font-size: 22px;
+    background-color: var(--clr-main-900);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+    color:var(--clr-neau-100);
+}
+
+.description{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cta-button{
+    margin-top: 10px;
 }
 
 #jscard{
@@ -8,14 +103,17 @@
 
 }
 
-.card{
-    max-width: 300px;
-    background-color: darkgreen;
-    border-radius: 16px;
-    color: white;
+footer {
+    background-color: var(--clr-main-300);
 
 }
 
-footer{
-    background-color: rgb(65, 57, 113);
+footer p {
+    color: var(--clr-neau-900);
+}
+
+#custom-footer {
+    color: var(--clr-main-100);
+    padding-top: 20px;
+
 }

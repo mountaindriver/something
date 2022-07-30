@@ -1,9 +1,20 @@
+$(document).foundation();
+
 // City, State locations
 var location_id = [
     '3000035823', //Rome, Italy
     '3000035827', //Paris, France
     '3000035821', //Berlin, Germany
 ]
+
+var location_pic =[
+    'italypic',
+    'https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fexternal-content.duckduckgo.com%2Fiu%2F%3Fu%3Dhttps%253A%252F%252Fi.dailymail.co.uk%252F1s%252F2019%252F05%252F20%252F10%252F13710642-7048895-image-a-36_1558343163171.jpg%26f%3D1%26nofb%3D1',
+    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdf%2F1e%2F4a%2Fdf1e4afe1edeb1f3e747afc1c9f5533d.jpg&f=1&nofb=1',
+
+]
+
+var location_pic1 = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdf%2F1e%2F4a%2Fdf1e4afe1edeb1f3e747afc1c9f5533d.jpg&f=1&nofb=1'
 
 // Used to genereate the cards
 var jscard = $('#jscard');
@@ -41,40 +52,49 @@ for (var i = 0; i < location_id.length; i++) {
                     console.log(priceline) //Delete
 
                     // Gets the country name using Priceline cityInfo, countryName and passes the country information to the Covid API to retreve the Covid data for that country
+                    var countryName = priceline.cityInfo.countryName;
                     var countryEl = data.response.find(({
                         country
-                    }) => country === priceline.cityInfo.countryName);
+                    }) => country === countryName);
 
                     console.log(countryEl.deaths.new);  //Delete
                     console.log(priceline.hotels[1].ratesSummary.minPrice); //Delete
                     console.log(priceline.hotels[1].name); //Delete
                     console.log(priceline.hotels[1].overallGuestRating); //Delete
 
-                    // Price, deathCount, Rates, guestRating, and currCovid variables from the API's
+                    // Price, guestRating, deathCount, and cases variables from the API's
                     var price = priceline.hotels[1].ratesSummary.minPrice;
-                    var rates = priceline.hotels[1].ratesSummary.minPrice;
                     var guestRating = priceline.hotels[1].overallGuestRating;
                     var deathCount = countryEl.deaths.new;
-                    // var currCovid = countryEl; //Current covid stat for that country, needs the path from the covid api
+                    var cases = countryEl.cases.active;
 
+                    // var picId = 'picId'+[i] 
+                    // console.log(picId)
+                    // var picUrl = "url('"+location_pic1+"')";
+                    // console.log(picUrl)
+                    // picId.attr("background-image", picUrl);
                     // Card houses the information pulled from the two API's and genereated in the HTML file
-                    // Need to update variable names and create var for cityinfo, country name and add variables to HTML card if we want to use them
-                    var card = 
-                    $(`
-                    <div class="travel-feature-card-details">
-                        <div class="card">
-                        <div class="small-12 medium-9 columns travel-feature-card-content">
-                            <div class="row">
-                            <div class="small-8 medium-10 columns">
-                                <h6 class="travel-feature-card-title">${priceline.cityInfo.countryName}</h6>
-                                <p>The rooms and suites have free WiFi and flat-screen TVs. Upgrades include outdoor decks with the
-                                gorgeous Manhattan views, 24-hour room service, and cocktail bars.</p>
-                            <h6>Starting Hotel rates per Night: $${price}</h6>
-                            <p class="travel-feature-card-price-subtext">Covid Death: ${deathCount}</p>
-                        </div>
-                    </div>`)
+                    var card =
+                        $(`
+                        <ul  class="pricing-table text-center">
+                            <li class="title">${countryName}</li>
+                            <li class="price">Hotels starting at: $${price}/night</li>
+                            <li class="description">The rooms and suites have free WiFi and flat-screen TVs. Upgrades include outdoor decks with the
+                                gorgeous Manhattan views, 24-hour room service, and cocktail bars.</li>
+                            <li class="bullet-item">Covid Deaths: ${deathCount}</li>
+                            <li class="bullet-item">Active Covid cases: ${cases}</li>
+                            <li class="bullet-item">Avg rating: ${guestRating}</li>
+                            <li class="cta-button"><a class="button" href="#">Book Now</a></li>
+                        </ul>
+                    `)
 
+                    // if (countryName === 'Germany'){
+                    //     $('pricing-table').style.backgroundImage="url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdf%2F1e%2F4a%2Fdf1e4afe1edeb1f3e747afc1c9f5533d.jpg&f=1&nofb=1)"
+                    // }
                     
+
+                    // picId.attr("background-color", "blue")
+                    // picId.attr("background-image", picUrl);
                     jscard.append(card);
                     
                 })
