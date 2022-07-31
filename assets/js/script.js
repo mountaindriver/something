@@ -68,15 +68,10 @@ for (var i = 0; i < location_id.length; i++) {
                     var deathCount = countryEl.deaths.new;
                     var cases = countryEl.cases.active;
 
-                    // var picId = 'picId'+[i] 
-                    // console.log(picId)
-                    // var picUrl = "url('"+location_pic1+"')";
-                    // console.log(picUrl)
-                    // picId.attr("background-image", picUrl);
-                    // Card houses the information pulled from the two API's and genereated in the HTML file
+                    
                     var card =
                         $(`
-                        <ul  class="pricing-table text-center">
+                        <ul  class="pricing-table text-center trendingCards">
                             <li class="title">${countryName}</li>
                             <li class="price">Hotels starting at: $${price}/night</li>
                             <li class="description">The rooms and suites have free WiFi and flat-screen TVs. Upgrades include outdoor decks with the
@@ -84,17 +79,11 @@ for (var i = 0; i < location_id.length; i++) {
                             <li class="bullet-item">Covid Deaths: ${deathCount}</li>
                             <li class="bullet-item">Active Covid cases: ${cases}</li>
                             <li class="bullet-item">Avg rating: ${guestRating}</li>
-                            <li class="cta-button"><a class="button" href="#">Book Now</a></li>
+                            <li class="cta-button"><a class="button button-custom" href="#">Book Now</a></li>
                         </ul>
                     `)
 
-                    // if (countryName === 'Germany'){
-                    //     $('pricing-table').style.backgroundImage="url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdf%2F1e%2F4a%2Fdf1e4afe1edeb1f3e747afc1c9f5533d.jpg&f=1&nofb=1)"
-                    // }
                     
-
-                    // picId.attr("background-color", "blue")
-                    // picId.attr("background-image", picUrl);
                     jscard.append(card);
                     
                 })
@@ -104,3 +93,14 @@ for (var i = 0; i < location_id.length; i++) {
         // Catches any errors from the Priceline API
         .catch(err => console.error(err));
 }
+
+// Adds pplaceholder into the form inputs for check in and check out
+var checkInEl = $('#checkIn');
+var checkOutEl = $('#checkOut');
+
+var oneWeek = moment().add(7, "days").calendar();
+var twoWeek = moment().add(14, 'days').calendar();
+
+checkInEl.attr('placeholder', oneWeek);
+checkOutEl.attr('placeholder', twoWeek);
+

@@ -7,19 +7,19 @@
   <title>Covid Traveling Guide</title>
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&family=Edu+VIC+WA+NT+Beginner&family=Roboto:wght@100&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
 <body class="body">
 
-  <!-- Navigation -->
   <div class="nav-bar-custom">
+    <!-- Navigation -->
     <ul class="menu dropdown" data-dropdown-menu>
-      <li>
+      <li>Covid Safe Traveling:   </li>
+      <li class="">
         <a href="#">Travel</a>
         <ul class="menu">
           <li><a href="#">Hotel</a></li>
@@ -38,7 +38,7 @@
         <a href="#">Featured</a>
         <ul class="menu">
           <li><a href="#">Feauted</a></li>
-          <li><a href="#">Trending</a></li>
+          <li><a href="#trending">Trending</a></li>
           <li><a href="#">United States</a></li>
           <li><a href="#">Abroad</a></li>
         </ul>
@@ -52,69 +52,72 @@
         </ul>
       </li>
     </ul>
+    <!-- Navigation -->
   </div>
-  <!-- Navigation -->
 
   <br>
 
-  <!-- Jumbotron -->
-  <div class="row">
-
-    <div id="jumbotron" class="medium-6 large-5 columns">
-      <h1>Covid Safe Traveling</h1>
-      <h4>Travel Without Transmission!</h4>
-      <p>It goes without saying that Covid isn't cool! Heres some cool places you can visit to help
-        reduce the doom & gloom of quarantine!</p>
-    </div>
-    <!-- Jumbotron -->
-
+  <div class="grid-margin-x">
     <!-- Form -->
-    <div class="medium-6 large-5 columns">
-
-      <!-- callout secondary -->
-      <form>
-        <div class="row card-custom">
-          <div class="small-12 columns">
-            <label>Destination
+    <div class="small-12 medium-5  cell">
+      <form class="card-custom ">
+        <div class="">
+          <h3 id="trending">Travel Without Transmission!</h1>
+            <label>Destination:
               <input type="text" id="destination" placeholder="Where from?">
             </label>
-          </div>
-          <div class="small-12 columns">
-            <label>Origin:
-              <input type="text" id="origin" placeholder="Where to?">
-            </label>
-          </div>
-          <div class="small-12 columns">
-            <label>Check In:
-              <input type="text" id="checkIn" placeholder="">
-            </label>
-          </div>
-          <div class="small-12 columns">
-            <label>Check Out:
-              <input type="text" id="checkOut" placeholder="">
-            </label>
-          </div>
-          <button type="submit" class="button expanded button-custom">Search</button>
         </div>
+        <div class="">
+          <label>Origin:
+            <input type="text" id="origin" placeholder="Where to?">
+          </label>
+        </div>
+        <div class="">
+          <label>Check In:
+            <input type="text" id="checkIn" placeholder="">
+          </label>
+        </div>
+        <div class="">
+          <label>Check Out:
+            <input type="text" id="checkOut" placeholder="">
+          </label>
+        </div>
+        <br>
+        <button type="submit" class="button expanded button-custom">Search</button>
       </form>
     </div>
     <!-- Form -->
 
-    <div class="row column">
-      <hr>
+    <!-- Jumbotron -->
+    <div id="jumbotron" class="small-12 medium-5 cell">
+      <!-- <h1>Covid Safe Traveling</h1> -->
+      <p>It goes without saying that Covid isn't cool! Heres some cool places you can visit to help
+        reduce the doom & gloom of quarantine!</p>
+      <img
+        src="https://media.istockphoto.com/photos/tropical-beach-palm-trees-sea-wave-and-white-sand-picture-id1300296030?b=1&k=20&m=1300296030&s=170667a&w=0&h=w1s7kmN2TH7O326d263Cs-E44teA1hy6u29UIVf_z1w="
+        alt="beach photo">
     </div>
+    <!-- Jumbotron -->
+  </div>
 
-    <div class="row column">
-      <p class="lead">Trending Covid Destinations</p>
-    </div>
+  <hr>
 
-    <!-- Card Load here -->
-    <div id="jscard"></div>
+  <div class="">
+    <h2 class="">Trending Covid Destinations:</h2>
+  </div>
 
+  <hr>
 
-    <div class="row">
-      <a class="button hollow expanded">Load More</a>
-    </div>
+  <div id="jscard">
+    <!-- Trending Cards Load Here -->
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <a class="button expanded button-custom">Load More</a>
+  </div>
+  
 
   <!-- Footer -->
   <footer>
@@ -130,7 +133,7 @@
       </div>
 
       <div class="small-12 medium-3 large-3 columns" id="custom-footer">
-        <p class="lead">Partner With Covid Traveling</p>
+        <p class="lead">Partner With Us</p>
         <ul class="menu vertical">
           <li><a href="#"> Add Your Hotel </a></li>
           <li><a href="#"> Partner Solutions </a></li>
@@ -138,11 +141,14 @@
         </ul>
       </div>
 
+
+      <!-- i's dont work! why not? :( -->
       <div class="small-12 medium-3 large-3 columns" id="custom-footer">
         <p class="lead">Contact</p>
         <ul class="menu vertical">
           <li>
-            <a href="https://github.com/mountaindriver/super-team-project"><i class="fi-social-github"></i> Github </a>
+            <a href="https://github.com/mountaindriver/super-team-project"><i class="fi-social-github"></i> Github
+            </a>
           </li>
           <li>
             <a href="#"><i class="fi-social-twitter"></i> Twitter </a>
@@ -165,9 +171,13 @@
     </div>
   </footer>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script src="./assets/js/script.js"></script>
+
+  <!-- JavaScript tags -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <!-- JavaScript tags -->
 </body>
 
 </html>
