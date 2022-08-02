@@ -1,4 +1,4 @@
-# Project
+# Covid Travling Guide
 
 <div id="top"></div>
 
@@ -7,7 +7,7 @@
 <br />
 <div align="center">
 
-  <h3 align="center"> Project 1</h3>
+  <h3 align="center"> Covid Travling Guide </h3>
 
   <p align="center">
     Created 7/21/2022
@@ -40,43 +40,15 @@
 
 The current traveling climate comes with many new tools and challenges to overcome many global problems.  Coronavirus is a major concern to many travelers looking to not get sick and spread illness to their loved ones while still also enjoying a vacation.  It is now very common to travel some where and not know or understand the risk involved at a new location therefore, we have created a website where you can search a location and get information about local coivd statistics and cost of travel and stay in area.  Having the ability to have detailed information all in one place and easily accessible
 
-Worked with fellow students to create a collaborative work. Each member of the group shared thier skills and knowledge and leaning on each others strengths to create this web application.  Used constant communication and time management ot organise meeting times and div
-
-A project is a bit different from the Challenge assignments you’ve worked on so far. One of the biggest differences is that you’ll no longer build an application by yourself! This has some advantages&mdash;you won’t have to do all of the work, you can divide up duties, and you can share skills and knowledge with other developers and lean on their strengths. This can also be challenging if you’re used to working alone. Constant communication and time management are just two of the skills you’ll need to practice to make sure everyone in your group works together to complete the project. 
-
-Projects won’t provide you with a user story or acceptance criteria, because you and your group will create them once you decide which real-world problem your application will solve. This lack of constraints can be freeing in a way, because you have room to build what you want, but it also means that you have to decide what those constraints are before you can start working.
-
-Finally, a project requires a presentation, because you’re trying to convince an audience that it serves a purpose. Your instructional staff and fellow students are investors, and you’re pitching your creation to them&mdash;an experience that developers are required to do frequently. Your presentation is just as important as the actual project, so take it just as seriously.
-
-## Project Requirements
-
-You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
-
-* Use a CSS framework other than Bootstrap.
-
-* Be deployed to GitHub Pages.
-
-* Be interactive (i.e., accept and respond to user input).
-
-* Use at least two [server-side APIs](https://coding-boot-camp.github.io/full-stack/apis/api-resources).
-
-* Does not use alerts, confirms, or prompts (use modals).
-
-* Use client-side storage to store persistent data.
-
-* Be responsive.
-
-* Have a polished UI.
-
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-* Have a  screenshots, and link to deployed application).
-
-
+Worked with fellow students to create a collaborative work. Each member of the group shared thier skills and knowledge and leaning on each others strengths to create this web application.  Used constant communication and time management ot organise meeting times and divide tasks.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Actually about our project
+
+<hr>
+
+<img src="./assets/img/Project-1-Screenshot.png">
 
 Through blood, sweat and mostly tears. THIS is our project that we have so painstakingly created. A (mostly) functional website to give users general price & Covid information about locations they may want to travel to.
 * Heres what it does
@@ -86,11 +58,11 @@ Through blood, sweat and mostly tears. THIS is our project that we have so pains
     * When they will be arriving to and departing from the location of their choice
     * Their choice of Available hotels, rooms, rental cars, flights, donuts
     * As well as determine which ratings are acceptable for for all of the above!
-  * 
 
 
 
-### Built With
+
+### Built **With**
 
 * [VScode]
 * [HTML]
@@ -98,7 +70,9 @@ Through blood, sweat and mostly tears. THIS is our project that we have so pains
 * [JavaScript]
 * [Foundation]
 * [Github]
-* []
+* [Moment.js]
+* [Priceline-API]
+* [Covid-19-API]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -106,8 +80,8 @@ Through blood, sweat and mostly tears. THIS is our project that we have so pains
 <!-- CONTACT -->
 ## Contact
 
-* Lucas Freigenberg - lsfreigenberg@outlook.com
-* James Hampton ----- jimmy.hampton@outlook.com
+* Lucas Freigenberg -- lsfreigenberg@outlook.com
+* James Hampton -- jimmy.hampton@outlook.com
 * Zachry Jorgensen -- z.d.jorgensen@gmail.com 
 
 Project Link: []()

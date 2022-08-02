@@ -12,7 +12,6 @@
 }
 
 .body {
-    /* background-color:var(--clr-main-100); */
     color: var(--clr-neau-700);
     font-family: 'Work Sans', sans-serif;
 }
@@ -43,10 +42,8 @@
     color: var(--clr-main-500);
     font-style: italic;
     font-family: 'Work Sans', sans-serif;
-    /* border: 3px var(--clr-main-500) solid; */
     background-color: var(--clr-neau-100);
     padding: 20px;
-    /* border-radius: 16px; */
 }
 
 
@@ -67,7 +64,6 @@
     background-color: var(--clr-neau-100);
     padding: 20px;
     border-radius: 16px;
-
 }
 
 .card-custom h3 {
@@ -99,7 +95,6 @@
     color: var(--clr-main-100);
     font-family: 'Work Sans', sans-serif;
     font-style: italic;
-
 }
 
 .button-custom:hover {
@@ -128,7 +123,6 @@
 
 .pricing-table {
     border: 2px var(--clr-main-500) solid;
-
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -151,9 +145,7 @@
     background-color: var(--clr-main-500);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    /* text-decoration: underline; */
     font-weight: bold;
-
     color: var(--clr-neau-100);
 }
 
@@ -166,13 +158,10 @@
     margin-top: 10px;
 }
 
-
-
 #jscard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 #jscard:target {
@@ -181,7 +170,6 @@
 
 footer {
     background-color: var(--clr-main-300);
-
 }
 
 footer a {
@@ -195,5 +183,4 @@ footer p {
 #custom-footer {
     color: var(--clr-main-100);
     padding-top: 20px;
-
 }
