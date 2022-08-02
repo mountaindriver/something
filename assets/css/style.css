@@ -43,16 +43,20 @@
     color: var(--clr-main-500);
     font-style: italic;
     font-family: 'Work Sans', sans-serif;
-    border: 3px var(--clr-main-500) solid;
+    /* border: 3px var(--clr-main-500) solid; */
     background-color: var(--clr-neau-100);
     padding: 20px;
-    border-radius: 16px;
+    /* border-radius: 16px; */
 }
 
 
 #jumbotron p{
     color: var(--clr-main-500);
     font-weight: bold;
+}
+
+#jumbotron img{
+    border-radius: 16px;
 }
 
 .card-custom{
@@ -102,6 +106,12 @@
     background-color: var(--clr-main-500);
     transform: scale(1.02);
 
+}
+
+#trending{
+    color: var(--clr-main-500);
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 .pricing-table{
