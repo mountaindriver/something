@@ -18,6 +18,7 @@ var location_pic1 = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2
 
 // Used to genereate the cards
 var jscard = $('#jscard');
+var previousHistory = $('#previous-history');
 
 // Covid API Key
 const covid = {
@@ -103,4 +104,26 @@ var twoWeek = moment().add(14, 'days').calendar();
 
 checkInEl.attr('placeholder', oneWeek);
 checkOutEl.attr('placeholder', twoWeek);
+
+$('#search-btn').on('click', function () {
+
+    var destination = $('#destination').val();
+    var origin = $('#origin').val();
+    var checkIn = $('#checkIn').val();
+    var checkOut = $('#checkOut').val();
+
+    var historyCard =
+        $(`
+        <ul class="previous-history text-center trendingCards column small-12 large-4">
+            <li class="title">Destination: ${destination}</li>
+            <li class="price">Origin: ${origin}</li>
+            <li class="bullet-item">Check In: ${checkIn}</li>
+            <li class="bullet-item">Check Out: ${checkOut}</li>
+        </ul>
+    `)
+
+    previousHistory.append(historyCard);
+    
+
+})
 
