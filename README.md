@@ -1,4 +1,4 @@
-# Covid Travling Guide
+# Covid Traveling Guide
 
 <div id="top"></div>
 
