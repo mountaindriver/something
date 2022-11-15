@@ -7,7 +7,7 @@
 <br />
 <div align="center">
 
-  <h3 align="center"> Covid Travling Guide </h3>
+  <h3 align="center"> Covid Traveling Guide </h3>
 
   <p align="center">
     Created 7/21/2022
@@ -32,7 +32,7 @@
   </ol>
 </details>
 
-
+![Covid Traveling Guide](assets\img\Project-1-Screenshot.png)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -48,10 +48,8 @@ Worked with fellow students to create a collaborative work. Each member of the g
 
 <hr>
 
-<img src="./assets/img/Project-1-Screenshot.png">
 
-Through blood, sweat and mostly tears. THIS is our project that we have so painstakingly created. A (mostly) functional website to give users general price & Covid information about locations they may want to travel to.
-* Heres what it does
+ A functional frontend website to give users general price & Covid information about locations they may want to travel to.  That uses third party API's to gather data about flights, hotel, and covid rates for a location
   * When opening the website the user will be greeted with our magnificent front end hand crafted by founda.... I mean us! This will include pictures and short descriptions of some popular locations
   * Options, we here at groupName strongly belive that the end-user should be able to self-actualize their own traveling parameters to their very hearts extent. They will be able to determine a large array of factors they would like such as 
     * Determine which Covid rates & local guidelines they would like 
